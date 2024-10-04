@@ -1,4 +1,4 @@
-# Copyright (c) SONGOKU92 2024
+# Copyright (c) 2024 SONGOKU92
 # See the file 'LICENSE' for copying permission.
 # Licensed under the MIT License.
 
