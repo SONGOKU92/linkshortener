@@ -1,6 +1,6 @@
 # 🔗 URL Shortener avec Flask
 
-Une petite application web construite avec Flask pour raccourcir des URLs.
+Une petite application web construite avec le framework Flask pour raccourcir des URLs.
 
 ## Fonctionnalités
 
