@@ -25,18 +25,15 @@ def home():
     </form>
     ''')
 
-
 @app.route('/favicon.ico')
 def favicon():
     return '', 204
-
 
 @app.route('/shorten', methods=['POST'])
 def shorten_url():
     long_url = request.form['url']
     short_id = generate_short_id()
     
-
     while short_id in url_mapping:
         short_id = generate_short_id()
 
