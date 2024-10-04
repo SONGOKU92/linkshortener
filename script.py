@@ -58,4 +58,4 @@ def redirect_to_long_url(short_id):
         return jsonify({'error': 'URL non trouvée'}), 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=False)
