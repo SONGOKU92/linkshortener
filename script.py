@@ -1,7 +1,3 @@
-# Copyright (c) 2024 SONGOKU92
-# See the file 'LICENSE' for copying permission.
-# Licensed under the MIT License.
-
 from flask import Flask, request, redirect, jsonify, render_template_string
 import random
 import string
@@ -81,9 +77,9 @@ def shorten_url():
     
     while short_id in url_mapping:
         short_id = generate_short_id()
-
+        
     url_mapping[short_id] = long_url
-    short_url = request.host_url + short_id
+     short_url = f"https://{request.host}/{short_id}"
     return render_template_string('''
     <!DOCTYPE html>
     <html lang="fr">
