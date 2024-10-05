@@ -34,7 +34,7 @@ def home():
         <title>Raccourcir un lien</title>
         
     </head>
-    <body oncontextmenu="return false;">
+    <body>
         <div class="container">
             <h1>Réducteur d'URL</h1>
             <form action="/shorten" method="POST">
@@ -89,7 +89,7 @@ def shorten_url():
         <title>URL raccourcie</title>
         
     </head>
-    <body oncontextmenu="return false;">
+    <body>
         <div class="container">
             <h1>URL raccourcie !</h1>
             <p>Votre URL courte : <a href="{{ short_url }}">{{ short_url }}</a></p>
