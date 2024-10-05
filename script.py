@@ -79,7 +79,7 @@ def shorten_url():
         short_id = generate_short_id()
         
     url_mapping[short_id] = long_url
-     short_url = f"https://{request.host}/{short_id}"
+    short_url = f"https://{request.host}/{short_id}"
     return render_template_string('''
     <!DOCTYPE html>
     <html lang="fr">
